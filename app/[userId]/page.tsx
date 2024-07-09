@@ -1,6 +1,6 @@
 import React from "react";
 import { UserDetailedObjectType } from "@/lib/types";
-import { UserComponent } from "@/components/sections/UserSection"
+import { UserComponent } from "@/components/sections/user-section"
 const Vivid = async ({ params }: { params: { userId: string } }) => {
     const userDataResponse = await fetch(
         `https://www.zapfolio.in/api/get-user-data?userId=${params.userId}`
