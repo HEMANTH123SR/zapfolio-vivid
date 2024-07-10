@@ -55,7 +55,6 @@ export const UserComponent = ({ user }: { user: UserDetailedObjectType }) => {
                     {user.lastName.toUpperCase()}
                 </h1>
                 <div className="hidden  w-1/5 md:flex space-x-8 justify-end items-start text-2xl ">
-                    <span className="cursor-pointer">Hin</span>
                     <span className="text-yellow-300 cursor-pointer">Eng</span>
                 </div>
             </div>
