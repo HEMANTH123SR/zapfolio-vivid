@@ -10,7 +10,7 @@ export const GET = async (req: NextRequest) => {
         `https://www.zapfolio.in/api/get-user-data?userId=${id}`
       );
       const userData = await userDataResponse.json();
-
+      console.log("use data ", userData);
       if (userData.success) {
         return NextResponse.json(
           { success: true, data: userData.data },

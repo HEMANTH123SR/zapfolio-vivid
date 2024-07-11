@@ -23,12 +23,13 @@ const Vivid = ({ params }: { params: { userId: string } }) => {
   useEffect(() => {
     setIsLoading(true);
     (async () => {
-      const userDataResponse = await fetch(`/api?id=${params.userId}`);
+      const userDataResponse = await fetch(`/api?id=${params.userId}`,
+        { cache: "no-store" });
       const userData = await userDataResponse.json();
 
       if (userData.success) {
         setUser(userData.data.linkedinUserData);
-        setComponentsToShow(userData.data.themesData.slate.componentsToShow);
+        setComponentsToShow(userData.data.themesData.vivid.componentsToShow);
       }
       setIsLoading(false);
     })();
