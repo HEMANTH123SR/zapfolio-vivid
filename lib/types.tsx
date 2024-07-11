@@ -81,3 +81,18 @@ export interface UserDetailedObjectType {
   certifications: Certification[] | null;
   projects: Project[] | null;
 }
+
+
+export interface ComponentsToShowType {
+  summary: boolean;
+  headline: boolean;
+  geo: boolean;
+  languages: boolean;
+  educations: boolean;
+  position: boolean;
+  skills: boolean;
+  courses: boolean;
+  certifications: boolean;
+  projects: boolean;
+  resume: boolean;
+}
