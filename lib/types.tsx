@@ -25,7 +25,7 @@ interface Education {
 interface Position {
   companyName: string;
   companyUsername: string | null;
-  companyURL: string;
+  companyURL: string | null;
   companyLogo: string | null;
   companyIndustry: string | null;
   companyStaffCountRange: string | null;
